@@ -1,0 +1,35 @@
+{
+  "name": "yandex-dialogs-tester",
+  "version": "0.0.1",
+  "description": "Автоматические тесты для Яндекс.Диалогов",
+  "main": "src/tester.js",
+  "scripts": {
+    "start": "node src/cli.js",
+    "version": "npm run changelog && git add CHANGELOG.md",
+    "postversion": "git push && npm run release && npm publish",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "release": "conventional-github-releaser -p angular"
+  },
+  "bin": {
+    "yandex-dialogs-tester": "src/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/popstas/yandex-dialogs-tester.git"
+  },
+  "keywords": [
+    "yandex-dialogs",
+    "alice"
+  ],
+  "author": "Stanislav Popov <popstas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/popstas/yandex-dialogs-tester/issues"
+  },
+  "homepage": "https://github.com/popstas/yandex-dialogs-tester",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "command-line-args": "^5.0.2",
+    "js-yaml": "^3.12.0"
+  }
+}
