@@ -35,3 +35,20 @@ yandex-dialogs-tester --webhook-url http://localhost:3000 --scenarios-file /path
 - Многофайловые сценарии
 - Проверка кнопок
 - `--timeout`
+
+## Скачать и протестировать навык yandex-dialogs-whatis
+
+1. Установка и запуск навыка:
+``` bash
+git clone https://github.com/popstas/yandex-dialogs-whatis.git /tmp/yandex-dialogs-whatis && \
+cd /tmp/yandex-dialogs-whatis && \
+npm install && \
+cp src/config.sample.js src/config.js && \
+npm start
+```
+
+2. Установка и запуск тестилки (в другом терминале):
+``` bash
+npm install -g yandex-dialogs-tester
+yandex-dialogs-tester --scenarios-file /tmp/yandex-dialogs-whatis/static/scenarios.yml --webhook-url http://localhost:3002
+```
