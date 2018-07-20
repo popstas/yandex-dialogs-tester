@@ -1,6 +1,6 @@
 {
   "name": "yandex-dialogs-tester",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Автоматические тесты для Яндекс.Диалогов",
   "main": "src/tester.js",
   "scripts": {
