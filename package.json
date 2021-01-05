@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/popstas/yandex-dialogs-tester",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "command-line-args": "^5.0.2",
     "js-yaml": "^3.12.0"
   }
